@@ -92,10 +92,10 @@
                 url: url,
                 data: user
             }).done(function(msg) {
-                $('#treecam').show();
                 $('#inputspan').text('Thanks, same back to you!');
+                $('#treecam').show();
             }).fail(function(err, textstatus, error) {
-                $('span').text(textstatus);
+                $('#inputspan').text(textstatus);
             });
         });
     });
