@@ -4,11 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>XmasWifiTree CAM</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <script>
+       setInterval(function () {
+          var d = new Date();
+          $("#myimg").attr("src", "https://nexcld.duckdns.org/treecam//jp?"+d.getTime());
+       }, 512);
+    </script>
 </head>
 
 <body> 
    <div style="width: 141px; height: 176px; overflow: hidden">
-     <img src="https://nexcld.duckdns.org/treecam//jpg" width="150" height="176">
+     <img id="myimg" src="https://nexcld.duckdns.org/treecam//jpg" width="300" height="176">
    </div>
 </body>
 </html>
