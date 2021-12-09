@@ -13,9 +13,9 @@
    </div>
     <script>
        window.setInterval(function () {
-          var d = new Date();
-          $("#myimg").attr("src", "https://nexcld.duckdns.org/treecam//jp?"+d.getTime());
-       }, 512);
+            var timestamp = new Date().getTime();
+            document.getElementById("myimg").src = "https://nexcld.duckdns.org/treecam//jpg" + "?t=" + timestamp;   
+       }, 1024);
     </script>
 </body>
 </html>
