@@ -92,10 +92,8 @@
                 url: url,
                 data: user
             }).done(function(msg) {
-                  $('#inputspan').hide();
-                  $('#treecam').show();
-                // When the request is successful
-                $('span').text('Thanks, same back to you!');
+                $('#treecam').show();
+                $('#inputspan').text('Thanks, same back to you!');
             }).fail(function(err, textstatus, error) {
                 $('span').text(textstatus);
             });
